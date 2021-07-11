@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="registrar.js"></script>
+</head>
+<body>
+    <div><h1>Delilah Restó</h1></div>
+    
+     <div>
+        <form action="" method="get">
+            <label for="usuario">Usuario</label><br><input type="text" name="usuario" id="usuario"><br>
+
+            <label for="nombreCompleto">Nombre y Apellido</label><br><input type="text" name="nombreCompleto" id="nombreCompleto"><br>
+
+            <label for="Mail">Mail</label><br><input type="email" name="correo" id="correo" onblur="validarCorreo()"><br>
+
+            <label for="telefono">Teléfono</label><br><input type="tel" name="telefono" id="telefono"><br>
+
+            <label for="direccion">Dirección de envío</label><br><input type="text" name="direccion" id="direccion"><br>
+            
+            <label for="contrasena">Contraseña</label><br><input type="password" name="pass" id="pass"><br>
+            
+            <label for="contrasena">Repetir Contraseña</label><br><input type="password" name="pass2" id="pass2" onblur="validarContraseña()" ><br>
+            
+            <input type="button" value="CREAR CUENTA" onclick="registrarUsuario()">
+        </form>
+     </div>
+     <div id="texto">
+         blanco
+     </div>
+
+
+</body>
+</html>
