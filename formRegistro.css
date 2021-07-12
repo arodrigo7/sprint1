@@ -1,0 +1,13 @@
+*{
+    background-color:rgb(173, 169, 169);
+    font-weight: 700;
+    text-align: center;
+    padding: 1px;
+    margin: 5px;
+}
+
+
+.flex-container{
+    display: flex;
+    background-color: #48E;
+}

@@ -94,6 +94,8 @@ function registrarUsuario(){
                 }else{
                 alert("podemos guardar todo en un objeto");
                 document.getElementById("texto").innerHTML = "Usuario grabado con éxito";
+                document.getElementById("texto").style.color="green";
+                document.getElementById("texto").style.fontSize= "25px";
                 usuarioNuevo=new Usuarios(user,nombre,email,telefono,direccion,contrasena);
                 listaUsuario.push(usuarioNuevo);
                 console.log(listaUsuario);
@@ -129,6 +131,9 @@ if (existe==true && contraI==contraSesion){
         alert("contraseña Incorrecta");
     }
     
+}
 
+function listadoConsol(){
+    console.log(listaUsuario);
 
 }
