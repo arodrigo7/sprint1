@@ -79,7 +79,7 @@ function registrarUsuario(){
     listaUsuario.forEach(function (elemento){
         console.log(elemento.email);
         if (email===elemento.email){
-        autentificacion= true;
+        autentificacion= true;        
         console.log(autentificacion);    
         }
     })
@@ -100,4 +100,35 @@ function registrarUsuario(){
                 console.log(usuarioNuevo);
                 } 
                    
-}        
+}     
+
+////////////////////////////////////////////////////////////////////////////// INICIO DE SESION /////////////////////////////////////////////
+function iniciar(){
+let existe= false;
+let emailI=document.getElementById("correoI").value;
+var contraI
+//////recorro array para buscar un mail de usuario/////
+
+listaUsuario.forEach(function (elemento){    
+    if (emailI==elemento.email){
+    existe= true;
+    contraSesion=elemento.contrasena    
+    index=listaUsuario.indexOf(elemento)
+    console.log(contraSesion);
+    console.log(existe);
+    console.log(index);  
+    alert("existe");  
+    }
+})
+var contraI=document.getElementById("passI").value;
+//////////////////////////////////////////////////////////
+if (existe==true && contraI==contraSesion){
+    console.log(index); 
+    document.getElementById("textoPosicionUsuario").innerHTML= "Usuario número"+""+index;  
+    }else{
+        alert("contraseña Incorrecta");
+    }
+    
+
+
+}
