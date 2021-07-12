@@ -4,16 +4,16 @@
     text-align: center;
     padding: 1px;
     margin: 5px;
+    
 }
 
-
-.flex-container{
-    display: flex;
-    background-color: #48E;
+.cuadrado{
+    padding-top: 105px;
+    width: 100%;
 }
-
 
 .btn{
+    width: 250px;
     border-radius: 15px;
     /*display: inline-block;*/
     padding: 25px 35px;
@@ -30,6 +30,7 @@
 .btn-green:hover{
     background-color: green;
 }
+
 .btn-gris{
     color: rgb(60, 148, 224);
     background-color: rgb(110, 114, 110);

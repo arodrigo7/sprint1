@@ -122,6 +122,10 @@ listaUsuario.forEach(function (elemento){
     alert("existe");  
     }
 })
+
+if(existe==false){
+    alert("no existe email");
+}
 var contraI=document.getElementById("passI").value;
 //////////////////////////////////////////////////////////
 if (existe==true && contraI==contraSesion){
