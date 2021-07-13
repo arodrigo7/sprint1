@@ -20,6 +20,7 @@
     text-decoration: none; 
     text-shadow: 0 1px 0 rgba(255,255,255,255);
     box-shadow: 0 3px 3px rgba(255,255,255,255);
+    width: 350px;
 }
 
 .btn-green{
